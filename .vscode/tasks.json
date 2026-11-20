@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Biblioteca Digital",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Install Supabase SDK",
+			"type": "shell",
+			"command": "npm install @supabase/supabase-js",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build Supabase Integration",
+			"type": "shell",
+			"command": "npm run build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Verify Supabase setup",
+			"type": "shell",
+			"command": "npm install @supabase/supabase-js && npm run build",
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

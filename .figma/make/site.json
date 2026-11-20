@@ -1,0 +1,10 @@
+{
+  "description": "A digital library for Colégio Wiliete students to discover, read, save, and share academic theses, with tools for finalists to submit their work.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
